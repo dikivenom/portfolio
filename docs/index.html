@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+   
+    <script src="//unpkg.com/alpinejs" defer></script>
+    
+    <script src="https://kit.fontawesome.com/2ab1f3a5b3.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+    <title>Dicky Ramadhan</title>
+    <link rel="stylesheet" href="/dist/tailwind.css" />
+    
+
+  </head>
+  <body class="bg-slate-900">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+    </style>
+    <script>
+      AOS.init();
+    </script>
+
+    <nav class="bg-slate-900 py-4 px-1" x-data="{navOpen : false}">
+      <div class="container mx-auto">
+        <div class="flex justify-between">
+         <a href=""><h1 class="font-Poppins text-white ml-5 font-bold"><i class="fa-solid fa-code mr-3" style="color: #67E8F9;"></i>Dicky Ramadhan</h1></a> 
+          <button>
+            <ion-icon name="menu-outline" @click="navOpen = ! navOpen" class="lg:hidden text-white border-double border-4 text-lg"></ion-icon>
+          </button>
+          <div class="hidden lg:block">
+            <ul class="flex gap-9 mr-4 font-semibold ">
+              <li class="font-Poppins text-cyan-400 hover:text-white active:text-cyan-700"><a href="#home">Home</a></li>
+              <li class="font-Poppins text-white hover:text-cyan-300 active:text-cyan-700"><a href="#about">About</a></li>
+              <li class="font-Poppins text-white hover:text-cyan-300 active:text-cyan-700"><a href="#skill">Tech Stack</a></li>
+              <li class="font-Poppins text-white hover:text-cyan-300 active:text-cyan-700"><a href="#achievement">Achievements</a></li>
+              <li class="font-Poppins text-white hover:text-cyan-300 active:text-cyan-700"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="fixed bottom-0 bg-cyan-300 left-0 right-0 p-2 lg:hidden"
+          x-show="navOpen"
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="opacity-0 scale-90"
+          x-transition:enter-end="opacity-100 scale-100"
+          x-transition:leave="transition ease-in duration-300"
+          x-transition:leave-start="opacity-100 scale-100"
+          x-transition:leave-end="opacity-0 scale-90"
+          x-data="{open : false}"
+        >
+          <ul class="flex justify-between gap-1">
+            <li>
+              <a href="#home">
+              <button  class="flex justify-center items-center flex-col">
+                <ion-icon name="home-outline" class="text-slate-900 text-lg"></ion-icon>
+                <span  class="text-slate-900 text-sm font-Poppins font-bold">Home</span>
+              </button>
+            </a>
+            </li>
+            <li>
+              <a href="#about">
+              <button  class="flex justify-center items-center flex-col">
+                <ion-icon name="person-circle-outline" class="text-lg text-slate-900"></ion-icon>
+                <span" class="text-slate-900 text-sm font-Poppins font-bold">About</span>
+              </button>
+            </a>
+            </li>
+            <li>
+              <a href="#skill">
+              <button class="flex justify-center items-center flex-col">
+                <ion-icon name="planet-outline" class="text-lg text-slate-900"></ion-icon>
+                <span  class="text-slate-900 text-sm font-Poppins font-bold">Tech Stack</span>
+              </button>
+            </a>
+            </li>
+            <li>
+              <a href="#achievement">
+              <button class="flex justify-center items-center flex-col">
+                <ion-icon name="cube-outline" class="text-lg text-slate-900"></ion-icon>
+                <span class="text-slate-900 text-sm font-Poppins font-bold">Achievement</span>
+              </button>
+            </a>
+            </li>
+            <li>
+              <a href="#contact">
+              <button class="flex justify-center items-center flex-col">
+                <ion-icon name="cube-outline" class="text-lg text-slate-900"></ion-icon>
+                <span class="text-slate-900 text-sm font-Poppins font-bold">Contact</span>
+              </button>
+            </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="home" class="grid  md:grid-cols-2 container flex justify-center items-center">
+      <div class="ml-7 font-Poppins text-white md:ml-16 lg:ml-20">
+        <h2 data-aos="fade-up" data-aos-duration="2500" class="mt-5 lg:text-2xl"><span class="text-cyan-300">Hello</span> it's me</h2>
+        <h1 data-aos="fade-down" data-aos-duration="2500" class="text-2xl md:text-2xl lg:text-5xl font-semibold">Dicky Ramadhan</h1>
+        <h1 data-aos="fade-down" data-aos-duration="2500"  id="typewriter" class="text-2xl font-bold font-Poppins text-cyan-300"></h1>
+        <script>
+          const words = ["Front-End Developer", "Software Engineer"];
+          let i = 1;
+          let j = 1;
+          let currentWord = "";
+          let isDeleting = false;
+          
+          function type() {
+            currentWord = words[i];
+            if (isDeleting) {
+              document.getElementById("typewriter").textContent = currentWord.substring(0, j-1);
+              j--;
+              if (j == 1) {
+                isDeleting = false;
+                i++;
+                if (i == words.length) {
+                  i = 0;
+                }
+              }
+            } else {
+              document.getElementById("typewriter").textContent = currentWord.substring(0, j+1);
+              j++;
+              if (j == currentWord.length) {
+                isDeleting = true;
+              }
+            }
+            setTimeout(type, 90);
+          }
+          
+          type();
+          </script>
+        <p data-aos="fade-down" data-aos-duration="2500"  class="text-sm mt-1 ">Hallo, perkenalkan nama saya Dicky Ramadhan,Saya seorang Mahasiswa Institut Bisnis dan Informatika Kesatuan Bogor Program Studi Teknologi Informasi, Saya adalah seorang Front End Developer </p>
+        <div class="mt-7 flex gap-6">
+          <a  href="https://wa.me/6283806337900?text=Hallo%20DickyRamadhan" target="_blank"><i data-aos="fade-up" data-aos-duration="2500" class=" fa-brands fa-whatsapp fa-2xl drop-shadow-2xl shadow-cyan-200" style="color: #67E8F9;"></i></a>
+          <a href="https://www.instagram.com/kyy_rmdhn31" target="_blank"><i data-aos="fade-down" data-aos-duration="2500" class="fa-brands fa-instagram fa-2xl" style="color: #67E8F9;"></i></a>
+          <a href="" ><i data-aos="fade-up" data-aos-duration="2500" class="fa-brands fa-linkedin fa-2xl" style="color: #67E8F9;"></i></a>
+          <a href="https://github.com/dikivenom" target="_blank"><i data-aos="fade-down" data-aos-duration="2500" class="fa-brands fa-github fa-2xl" style="color: #67E8F9;"></i></a>
+        </div>
+        <div class="mt-6">
+          <a href="" ><button data-aos="zoom-out-up" data-aos-duration="3000" class="p-1 lg:py-2 lg:px-3 text-slate-900 font-semibold shadow-md shadow-cyan-100 bg-cyan-300 hover:bg-slate-900 hover:text-cyan-300 hover:shadow-inner hover:shadow-cyan-300 active:bg-cyan-900 active:shadow-inner active:shadow-black active:text-black rounded-full font-Poppins"><i class="fa-regular fa-circle-down fa-bounce mr-1"></i>Download CV</button></a>
+        </div>
+      </div>
+      <div class="mx-auto w-40 sm:w-auto lg:ml-12 lg:mr-24 lg:mt-4 md:mr-8  "><img data-aos="fade-up" data-aos-duration="3000" src="../docs/assets/kartun-diki.png" class="w-56 mt-11 mx-auto sm:mt-11 lg:mr-0 md:mr-0 flex lg:w-80 md:w-60 border rounded-full border-cyan-300 bg-cyan-300 shadow-lg shadow-cyan-200 " alt="Dicky" /></div>
+    </div>
+
+    <section id="about" class="mt-56">
+      <h1 data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500" class="text-cyan-300 text-center font-Poppins  mb-24 lg:mb-14 text-3xl lg:text-4xl font-bold">About Me</h1>
+      <div class="flex flex-col md:flex-row mx-10 gap-7">
+        <img src="/docs/assets/diki1.png" alt="" class="w-56 lg:w-72 md:mb-14 sm:mx-auto md:pl-10 mx-auto lg:mt-5" />
+
+        <div class="description sm:mt-5 lg:mt-24">
+          <p data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000" class="text-white font-Poppins mt-5">
+            Haloooo!, Perkenalkan nama saya Dicky Ramadhan, saya seorang mahasiswa Institut Bisnis Informatika Kesatuan, Program Studi Teknologi Informasi, Fakultas Informatika. Saya sebelumnya adalah seorang siswa SMK jurusan Rekayasa Perangkat Lunak (Software Engineer).
+          </p>
+          <p data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1000" class="text-white font-Poppins mt-2">Saya melanjutkan pendidikan saya ke jenjang yang lebih tinggi yaitu S1 (sedang menempuh pendidikan S1) di Institut Bisnis dan Informatika Kesatuan, Alasan saya masuk Teknologi Informasi karena saya sangat tertarik pada bidang Teknologi dan sangat menyukai dunia IT</p>
+        </div>
+      </div>
+    </section>
+
+    <div id="skill" class="mt-36">
+      <h1 data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="2500" class="text-cyan-300 font-Poppins flex justify-center text-3xl mb-24  lg:text-4xl font-bold">Tech Stack</h1>
+      <div class="flex justify-center mx-auto grid grid-flow-row gap-10 md:gap-20 md:flex  lg:flex lg:gap-28">
+        <img data-aos="zoom-out-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000" src="./assets/skills/htmllogo.png" alt="" class="drop-shadow-2xl w-24 lg:w-36 lg:h-36">
+        <img data-aos="zoom-out-down"
+        data-aos-easing="linear"
+        data-aos-duration="1000" src="./assets/skills/cssLOGO.png" alt="" class="w-24 lg:w-36 lg:h-36">
+        <img  data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000" src="./assets/skills/Bootstrap_logo.svg.png" alt="Bootstrap_logo" class="w-28 lg:w-36 lg:h-32"">
+      </div>
+      <div class="flex justify-center mx-auto grid grid-flow-row gap-10 md:mt-6 md:flex md:gap-16 lg:flex lg:gap-28">
+        <img data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000" src="./assets/skills/TailwindLogo.png" alt="TailwindLogo" class="mx-auto w-36 md:w-36 md:mx-0 lg:w-40 lg:h-36 lg:mx-0">
+        <img data-aos="zoom-out-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000" src="./assets/skills/PHP-logo.svg.png" alt="PHP-logo" class=" mx-auto w-32 md:h-24 md:mx-0 md:mt-5 lg:w-36 lg:h-24 lg:mt-5 lg:mx-0">
+        <img data-aos="zoom-out-down"
+        data-aos-easing="linear"
+        data-aos-duration="1000" src="./assets/skills/githubputihlogo.png" alt="GithubLogo" class="mx-auto w-28 md:h-28 md:mt-1 md:mx-0 lg:w-32 lg:h-32 lg:mx-0">
+      </div>
+    </div>
+
+
+<div id="achievement" class="mt-48">
+  <h1 data-aos="fade-down"
+  data-aos-easing="linear"
+  data-aos-duration="2500" class="text-cyan-300 flex justify-center text-3xl lg:text-4xl font-Poppins font-bold mb-24">Achievement</h1>
+  <p class="text-white flex justify-center text-sm lg:text-base font-Poppins mb-4 opacity-30">(Geser untuk melihat)</p>
+    <div data-aos="fade-up" data-aos-duration="1000" class="carousel carousel-center  max-w-md p-4 space-x-4 bg-neutral rounded-box flex mx-auto m-auto bg-slate-800 gap-6 ">
+
+      <div class="carousel-item">
+        <img src="./assets/bnsp.jpeg" class="rounded-box w-52 h-72 lg:w-64 lg:h-96 bg-cover" />
+      </div> 
+      <div class="carousel-item">
+        <img src="./assets/sertifpkl.jpeg" class="rounded-box w-52 h-72 lg:w-64 lg:h-96 " />
+      </div> 
+      <div class="carousel-item">
+        <img src="./assets/bnsp.jpeg" class="rounded-box w-52 h-72 lg:w-64 lg:h-96 bg-cover" />
+      </div> 
+      <div class="carousel-item">
+        <img src="./assets/sertifpkl.jpeg" class="rounded-box w-52 h-72 lg:w-64 lg:h-96 " />
+      </div> 
+      <div class="carousel-item">
+        <img src="./assets/bnsp.jpeg" class="rounded-box w-52 h-72 lg:w-64 lg:h-96 bg-cover" />
+      </div> 
+      <div class="carousel-item">
+        <img src="./assets/sertifpkl.jpeg" class="rounded-box w-52 h-72 lg:w-64 lg:h-96 " />
+      </div> 
+      <div class="carousel-item">
+        <img src="./assets/bnsp.jpeg" class="rounded-box w-52 h-72 lg:w-64 lg:h-96 bg-cover" />
+      </div>
+    </div>
+  </div>
+
+  
+  <div data-aos="fade-up" data-aos-duration="1000" class="container mx-auto w-96 lg:w-1/2 border border-cyan-300 mt-44 rounded-lg">
+    <div class="p-7 space-y-10">
+      <h1 class="text-cyan-300 text-center font-Poppins font-bold text-3xl lg:text-4xl ">Contact</h1>
+      <form >
+        <div class="grid grid-cols-2 gap-5">
+          <input type="text" placeholder="First name" class="rounded-sm px-4 py-2 focus:outline-cyan-600 border-cyan-200 focus:border-cyan-300 font-Poppins">
+          <input type="text" placeholder="Last name" class="rounded-sm px-4 py-2 focus:outline-cyan-600 border-cyan-200 focus:border-cyan-300 font-Poppins">
+          <input type="email" placeholder="Email" class="rounded-sm px-4 py-2 col-span-2 focus:outline-cyan-600 border-cyan-200 focus:border-cyan-300 font-Poppins">
+          <input type="text" placeholder="Phone" class="rounded-sm px-4 py-2 col-span-2 focus:outline-cyan-600 border-cyan-200 focus:border-cyan-300 font-Poppins">
+          <textarea name="" id="" cols="10" rows="5" class="rounded-sm  col-span-2 px-4 py-2 focus:outline-none border border-cyan-200 focus:border-cyan-300 font-Poppins" placeholder="Write your message..."></textarea>
+        </div>
+        
+        
+      </form>
+    </div>
+
+  </div>
+
+ 
+  <footer class="mt-56 mx-auto mb-10 ">
+<div class="flex justify-center gap-5">
+ 
+  <a href="https://wa.me/6283806337900?text=Hallo%20DickyRamadhan" target="_blank"><i class="fa-brands fa-square-whatsapp fa-2xl opacity-60" style="color: #67E8F9;"></i></a>
+ <a href="https://www.instagram.com/kyy_rmdhn31" target="_blank"> <i class="fa-brands fa-square-instagram fa-2xl opacity-60"  style="color: #67E8F9;"></i></a>
+ <a href="https://github.com/dikivenom" target="_blank"> <i class="fa-brands fa-square-github fa-2xl opacity-60"style="color: #67E8F9;" ></i></a>
+
+</div>
+<div class="text-center mt-5 ">
+  <h2 class="text-cyan-300 font-Poppins font-semibold opacity-50"> © 2024 Copyright:</h2>
+ <h3 class="text-cyan-300 font-Poppin opacity-50"> Made with <i class="fa-solid fa-heart" style="color: #ff0000;"></i> by <a href=""> Dicky Ramadhan</a></h3>
+</div>
+  </footer>
+
+<div class="flex justify-center mx-auto mt-7">
+ <a href="#home"> <i class="fa-solid fa-chevron-up fa-bounce fa-1xl" style="color: #ffffff;"></i></a>
+ 
+</div>
+<div class="flex justify-center">
+  <a href="#home"><h1 class="text-white font-Poppins mb-5">BACK TO TOP</h1></a>
+</div>
+
+  </body>
+</html>
