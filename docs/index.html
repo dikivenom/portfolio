@@ -35,9 +35,9 @@
     <nav class="bg-slate-900 py-4 px-1" x-data="{navOpen : false}">
       <div class="container mx-auto">
         <div class="flex justify-between">
-         <a href=""><h1 class="font-Poppins text-white ml-5 font-bold"><i class="fa-solid fa-code mr-3" style="color: #67E8F9;"></i>Dicky Ramadhan</h1></a> 
+         <a href=""><h1 class="font-Poppins text-white ml-5 font-bold items-center"><i class="fa-solid fa-code mr-3" style="color: #67E8F9;"></i>Dicky Ramadhan</h1></a> 
           <button>
-            <ion-icon name="menu-outline" @click="navOpen = ! navOpen" class="lg:hidden text-white border-double border-4 text-lg"></ion-icon>
+            <ion-icon name="reorder-four-outline" @click="navOpen = ! navOpen" class="lg:hidden text-white font-bold text-2xl mb-1 mr-1 border border-4 border-cyan-300 rounded-lg"></ion-icon>
           </button>
           <div class="hidden lg:block">
             <ul class="flex gap-9 mr-4 font-semibold ">
@@ -81,8 +81,8 @@
             <li>
               <a href="#skill">
               <button class="flex justify-center items-center flex-col">
-                <ion-icon name="planet-outline" class="text-lg text-slate-900"></ion-icon>
-                <span  class="text-slate-900 text-sm font-Poppins font-bold">Tech Stack</span>
+                <ion-icon name="logo-react" class="text-lg text-slate-900"></ion-icon>
+                <span  class="text-slate-900 text-sm font-Poppins font-bold">Tech</span>
               </button>
             </a>
             </li>
@@ -145,10 +145,10 @@
           </script>
         <p data-aos="fade-down" data-aos-duration="2500"  class="text-sm mt-1 ">Hallo, perkenalkan nama saya Dicky Ramadhan,Saya seorang Mahasiswa Institut Bisnis dan Informatika Kesatuan Bogor Program Studi Teknologi Informasi, Saya adalah seorang Front End Developer </p>
         <div class="mt-7 flex gap-6">
-          <a  href="https://wa.me/6283806337900?text=Hallo%20DickyRamadhan" target="_blank"><i data-aos="fade-up" data-aos-duration="2500" class=" fa-brands fa-whatsapp fa-2xl drop-shadow-2xl shadow-cyan-200" style="color: #67E8F9;"></i></a>
-          <a href="https://www.instagram.com/kyy_rmdhn31" target="_blank"><i data-aos="fade-down" data-aos-duration="2500" class="fa-brands fa-instagram fa-2xl" style="color: #67E8F9;"></i></a>
+          <a  href="https://wa.me/6283806337900?text=Hallo%20DickyRamadhan" target="_blank"><i data-aos="fade-up" data-aos-duration="2500" class=" fa-brands fa-whatsapp fa-2xl  drop-shadow-2xl shadow-cyan-200 " style="color: #67E8F9;"></i></a>
+          <a href="https://www.instagram.com/kyy_rmdhn31" target="_blank"><i data-aos="fade-down" data-aos-duration="2500" class="fa-brands fa-instagram fa-2xl " style="color: #67E8F9;"></i></a>
           <a href="" ><i data-aos="fade-up" data-aos-duration="2500" class="fa-brands fa-linkedin fa-2xl" style="color: #67E8F9;"></i></a>
-          <a href="https://github.com/dikivenom" target="_blank"><i data-aos="fade-down" data-aos-duration="2500" class="fa-brands fa-github fa-2xl" style="color: #67E8F9;"></i></a>
+          <a href="https://github.com/dikivenom" target="_blank"><i data-aos="fade-down" data-aos-duration="2500" class="fa-brands fa-github fa-2xl " style="color: #67E8F9;"></i></a>
         </div>
         <div class="mt-6">
           <a href="" ><button data-aos="zoom-out-up" data-aos-duration="3000" class="p-1 lg:py-2 lg:px-3 text-slate-900 font-semibold shadow-md shadow-cyan-100 bg-cyan-300 hover:bg-slate-900 hover:text-cyan-300 hover:shadow-inner hover:shadow-cyan-300 active:bg-cyan-900 active:shadow-inner active:shadow-black active:text-black rounded-full font-Poppins"><i class="fa-regular fa-circle-down fa-bounce mr-1"></i>Download CV</button></a>
@@ -172,7 +172,7 @@
           </p>
           <p data-aos="fade-up"
           data-aos-easing="linear"
-          data-aos-duration="1000" class="text-white font-Poppins mt-2">Saya melanjutkan pendidikan saya ke jenjang yang lebih tinggi yaitu S1 (sedang menempuh pendidikan S1) di Institut Bisnis dan Informatika Kesatuan, Alasan saya masuk Teknologi Informasi karena saya sangat tertarik pada bidang Teknologi dan sangat menyukai dunia IT</p>
+          data-aos-duration="1000" class="text-white font-Poppins mt-2">Saya melanjutkan pendidikan saya ke jenjang yang lebih tinggi yaitu S1 (sedang menempuh pendidikan S1) di Institut Bisnis dan Informatika Kesatuan, Alasan saya masuk Teknologi Informasi karena saya sangat tertarik pada bidang Teknologi dan sangat menyukai dunia Coding</p>
         </div>
       </div>
     </section>
@@ -181,7 +181,7 @@
       <h1 data-aos="fade-down"
       data-aos-easing="linear"
       data-aos-duration="2500" class="text-cyan-300 font-Poppins flex justify-center text-3xl mb-24  lg:text-4xl font-bold">Tech Stack</h1>
-      <div class="flex justify-center mx-auto grid grid-flow-row gap-10 md:gap-20 md:flex  lg:flex lg:gap-28">
+      <div class=" justify-center mx-auto grid grid-flow-row gap-10 md:gap-20 md:flex  lg:flex lg:gap-28">
         <img data-aos="zoom-out-up"
         data-aos-easing="linear"
         data-aos-duration="1000" src="./assets/skills/htmllogo.png" alt="" class="drop-shadow-2xl w-24 lg:w-36 lg:h-36">
@@ -192,7 +192,7 @@
         data-aos-easing="linear"
         data-aos-duration="1000" src="./assets/skills/Bootstrap_logo.svg.png" alt="Bootstrap_logo" class="w-28 lg:w-36 lg:h-32"">
       </div>
-      <div class="flex justify-center mx-auto grid grid-flow-row gap-10 md:mt-6 md:flex md:gap-16 lg:flex lg:gap-28">
+      <div class=" justify-center mx-auto grid grid-flow-row gap-10 md:mt-6 md:flex md:gap-16 lg:flex lg:gap-28">
         <img data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="1000" src="./assets/skills/TailwindLogo.png" alt="TailwindLogo" class="mx-auto w-36 md:w-36 md:mx-0 lg:w-40 lg:h-36 lg:mx-0">
@@ -214,31 +214,31 @@
     <div data-aos="fade-up" data-aos-duration="1000" class="carousel carousel-center  max-w-md p-4 space-x-4 bg-neutral rounded-box flex mx-auto m-auto bg-slate-800 gap-6 ">
 
       <div class="carousel-item">
-        <img src="./assets/bnsp.jpeg" class="rounded-box w-52 h-72 lg:w-64 lg:h-96 bg-cover" />
+        <img src="./assets/bnsp.jpeg" class="rounded-box w-52 h-72  lg:w-80 lg:h-96 bg-cover" />
       </div> 
       <div class="carousel-item">
-        <img src="./assets/sertifpkl.jpeg" class="rounded-box w-52 h-72 lg:w-64 lg:h-96 " />
+        <img src="./assets/sertifpkl.jpeg" class="rounded-box w-52 h-72 lg:w-80 lg:h-96 " />
       </div> 
       <div class="carousel-item">
-        <img src="./assets/bnsp.jpeg" class="rounded-box w-52 h-72 lg:w-64 lg:h-96 bg-cover" />
+        <img src="./assets/bnsp.jpeg" class="rounded-box w-52 h-72 lg:w-80 lg:h-96 bg-cover" />
       </div> 
       <div class="carousel-item">
-        <img src="./assets/sertifpkl.jpeg" class="rounded-box w-52 h-72 lg:w-64 lg:h-96 " />
+        <img src="./assets/sertifpkl.jpeg" class="rounded-box w-52 h-72 lg:w-80 lg:h-96 " />
       </div> 
       <div class="carousel-item">
-        <img src="./assets/bnsp.jpeg" class="rounded-box w-52 h-72 lg:w-64 lg:h-96 bg-cover" />
+        <img src="./assets/bnsp.jpeg" class="rounded-box w-52 h-72 lg:w-80 lg:h-96 bg-cover" />
       </div> 
       <div class="carousel-item">
-        <img src="./assets/sertifpkl.jpeg" class="rounded-box w-52 h-72 lg:w-64 lg:h-96 " />
+        <img src="./assets/sertifpkl.jpeg" class="rounded-box w-52 h-72 lg:w-80 lg:h-96 " />
       </div> 
       <div class="carousel-item">
-        <img src="./assets/bnsp.jpeg" class="rounded-box w-52 h-72 lg:w-64 lg:h-96 bg-cover" />
+        <img src="./assets/bnsp.jpeg" class="rounded-box w-52 h-72 lg:w-80 lg:h-96 bg-cover" />
       </div>
     </div>
   </div>
 
   
-  <div data-aos="fade-up" data-aos-duration="1000" class="container mx-auto w-96 lg:w-1/2 border border-cyan-300 mt-44 rounded-lg">
+  <div data-aos="fade-up" data-aos-duration="1000" class="container mx-auto w-96 md:w-1/2 lg:w-1/2 border border-cyan-300 mt-44 rounded-lg">
     <div class="p-7 space-y-10">
       <h1 class="text-cyan-300 text-center font-Poppins font-bold text-3xl lg:text-4xl ">Contact</h1>
       <form >
