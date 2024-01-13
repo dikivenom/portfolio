@@ -32,7 +32,7 @@
       AOS.init();
     </script>
 
-    <nav class="bg-slate-900 py-4 px-1" x-data="{navOpen : false}">
+    <nav id="navbar" class="bg-slate-900 py-4 px-1" x-data="{navOpen : false}">
       <div class="container mx-auto">
         <div class="flex justify-between">
          <a href=""><h1 class="font-Poppins text-white ml-5 font-bold items-center"><i class="fa-solid fa-code mr-3" style="color: #67E8F9;"></i>Dicky Ramadhan</h1></a> 
@@ -143,7 +143,7 @@
           
           type();
           </script>
-        <p data-aos="fade-down" data-aos-duration="2500"  class="text-sm mt-1 ">Hallo, perkenalkan nama saya Dicky Ramadhan,Saya seorang Mahasiswa Institut Bisnis dan Informatika Kesatuan Bogor Program Studi Teknologi Informasi, Saya adalah seorang Front End Developer </p>
+        <p data-aos="fade-down" data-aos-duration="2500"  class="text-sm mt-1 ">Hallo, perkenalkan nama saya Dicky Ramadhan,Saya seorang Mahasiswa Program Studi Teknologi Informasi dan Saya adalah seorang Front-End Developer </p>
         <div class="mt-7 flex gap-6">
           <a  href="https://wa.me/6283806337900?text=Hallo%20DickyRamadhan" target="_blank"><i data-aos="fade-up" data-aos-duration="2500" class=" fa-brands fa-whatsapp fa-2xl  drop-shadow-2xl shadow-cyan-200 " style="color: #67E8F9;"></i></a>
           <a href="https://www.instagram.com/kyy_rmdhn31" target="_blank"><i data-aos="fade-down" data-aos-duration="2500" class="fa-brands fa-instagram fa-2xl " style="color: #67E8F9;"></i></a>
@@ -162,17 +162,17 @@
       data-aos-easing="linear"
       data-aos-duration="1500" class="text-cyan-300 text-center font-Poppins  mb-24 lg:mb-14 text-3xl lg:text-4xl font-bold">About Me</h1>
       <div class="flex flex-col md:flex-row mx-10 gap-7">
-        <img src="assets/diki1.png" alt="" class="w-56 lg:w-72 md:mb-14 sm:mx-auto md:pl-10 mx-auto lg:mt-5" />
+        <img data-aos="fade-down" data-aos-duration="1500" src="assets/diki1.png" alt="" class="w-56 lg:w-72 md:mb-14 sm:mx-auto md:pl-10 mx-auto lg:mt-5" />
 
         <div class="description sm:mt-5 lg:mt-24">
           <p data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1000" class="text-white font-Poppins mt-5">
-            Haloooo!, Perkenalkan nama saya Dicky Ramadhan, saya seorang mahasiswa Institut Bisnis Informatika Kesatuan, Program Studi Teknologi Informasi, Fakultas Informatika. Saya sebelumnya adalah seorang siswa SMK jurusan Rekayasa Perangkat Lunak (Software Engineer).
+          Hallo saya Dicky Ramadhan, izinkan saya memperkenalkan diri mengapa saya sangat tertarik untuk menjadi seorang Front-End Developer. Saya percaya bahwa front end development adalah bidang yang sangat menarik dan menjanjikan. Bidang ini terus berkembang pesat, dan selalu ada hal baru yang bisa dipelajari. Saya ingin terus berkarir di bidang ini, dan saya ingin menjadi seorang front end developer yang profesional dan berpengalaman.
           </p>
           <p data-aos="fade-up"
           data-aos-easing="linear"
-          data-aos-duration="1000" class="text-white font-Poppins mt-2">Saya melanjutkan pendidikan saya ke jenjang yang lebih tinggi yaitu S1 (sedang menempuh pendidikan S1) di Institut Bisnis dan Informatika Kesatuan, Alasan saya masuk Teknologi Informasi karena saya sangat tertarik pada bidang Teknologi dan sangat menyukai dunia Coding</p>
+          data-aos-duration="1000" class="text-white font-Poppins mt-2">Saya berharap dapat terus belajar dan berkembang di bidang front end development. Saya ingin menjadi seorang front end developer yang dapat membuat situs web dan aplikasi web yang menarik, user-friendly, dan responsif.</p>
         </div>
       </div>
     </section>
@@ -248,6 +248,7 @@
           <input type="email" placeholder="Email" class="rounded-sm px-4 py-2 col-span-2 focus:outline-cyan-600 border-cyan-200 focus:border-cyan-300 font-Poppins">
           <input type="text" placeholder="Phone" class="rounded-sm px-4 py-2 col-span-2 focus:outline-cyan-600 border-cyan-200 focus:border-cyan-300 font-Poppins">
           <textarea name="" id="" cols="10" rows="5" class="rounded-sm  col-span-2 px-4 py-2 focus:outline-none border border-cyan-200 focus:border-cyan-300 font-Poppins" placeholder="Write your message..."></textarea>
+          <button class="font-Poppins text-slate-900 bg-cyan-300 rounded-sm font-bold hover:bg-slate-900 border-4 border-cyan-300 hover:border-cyan-300 hover:text-cyan-300 active:bg-cyan-900 active:shadow-inner active:shadow-black active:border-none "> Send </button>
         </div>
         
         
@@ -276,7 +277,7 @@
  
 </div>
 <div class="flex justify-center">
-  <a href="#home"><h1 class="text-white font-Poppins mb-5">BACK TO TOP</h1></a>
+  <a href="#navbar"><h1 class="text-white font-Poppins mb-5">BACK TO TOP</h1></a>
 </div>
 
   </body>
